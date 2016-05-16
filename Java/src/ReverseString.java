@@ -1,4 +1,6 @@
 /**
+ *
+ * StringBuilder竟然比直接写要好用,不是很懂leetcode :)
  * @Nogizakaz
  */
 public class ReverseString {
@@ -6,22 +8,14 @@ public class ReverseString {
         if ( s.isEmpty() ) {
             return "null";
         }
-        String str = new String();
 
-        char[] ch1 = s.toCharArray();
-
-        str = "";
-        for ( int i = s.length() - 1 ; i >= 0 ; i-- ) {
-            str += ch1[i];
-
-        }
-        return str;
+        return new StringBuilder( s ).reverse().toString();
 
 
     }
 
     public static void main ( String[] args ) {
-        String b = "";
+        String b = "abc";
         String a = new String( b );
         System.out.print( new ReverseString().reverseString( a ) );
 
