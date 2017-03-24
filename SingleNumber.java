@@ -4,7 +4,7 @@
  * 很重要的是异或是有交换律的,所以其实就是把所有相同的数字移动到一起异或为0,然后异或下一个单独的数字为单独的数字
  *
  *
- *@NogizakaZ
+ * @NogizakaZ
  */
 public class SingleNumber {
     public int singleNumber ( int[] nums ) {
@@ -20,9 +20,9 @@ public class SingleNumber {
     }
 
     public static void main ( String[] args ) {
-        int[] a = {1,1, 2,2, 3, 4,5,4,5};
+        int[] a = {1,1, 1,2};
 
-        //System.out.print( new SingleNumber().singleNumber( a ) );
-       System.out.print(6^5);
+        System.out.print( new SingleNumber().singleNumber( a ) );
+       //System.out.print(6^5);
     }
 }
